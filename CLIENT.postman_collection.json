@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "6caf9e1c-a14b-4394-9916-1c5679ccd3cc",
+		"name": "CLIENT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET CLIENT",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/client/:client_id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"client",
+						":client_id"
+					],
+					"variable": [
+						{
+							"key": "client_id",
+							"value": "125"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE CLIENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Client_name\":\"varshini\",\r\n    \"client_id\": 125,\r\n    \"client_address\": \"clocktower\",\r\n    \"city\": \" guntur\",\r\n    \"country\": \"INDIA\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/client/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"client",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE CLIENT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2000/client/:client_id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"client",
+						":client_id"
+					],
+					"variable": [
+						{
+							"key": "client_id",
+							"value": "125"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE CLIENT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Client_name\":\"jessie\",\r\n    \"client_id\": 125,\r\n    \"client_address\": \"clocktower\",\r\n    \"city\": \" guntur\",\r\n    \"country\": \"INDIA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/client/:client_id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"client",
+						":client_id"
+					],
+					"variable": [
+						{
+							"key": "client_id",
+							"value": "125"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
